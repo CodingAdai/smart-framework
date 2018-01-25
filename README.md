@@ -16,3 +16,8 @@
 * 类加载器
 * Java资源文件加载
 * Tomcat
+
+
+## 小结
+通过这次小的实践，可以发现实现一个最简单IoC功能的框架并不复杂，当然其中也需要掌握各种Java知识。对比强大的Spring Framework，我想用到的基本思路和知识应该是差不多的，当然Spring Framework也需要好好研究，更深入的了解Spring Framework。
+ 下一步跟着完成AOP功能。
