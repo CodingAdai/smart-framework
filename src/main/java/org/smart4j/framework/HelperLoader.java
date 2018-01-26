@@ -2,10 +2,7 @@ package org.smart4j.framework;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.smart4j.framework.helper.BeanHelper;
-import org.smart4j.framework.helper.ClassHelper;
-import org.smart4j.framework.helper.ControllerHelper;
-import org.smart4j.framework.helper.IoCHelper;
+import org.smart4j.framework.helper.*;
 import org.smart4j.framework.util.ClassUtil;
 
 /**
@@ -17,7 +14,7 @@ public class HelperLoader {
 
     public static void init() {
 
-        Class<?>[] classes = {ClassHelper.class, BeanHelper.class, IoCHelper.class, ControllerHelper.class};
+        Class<?>[] classes = {ClassHelper.class, BeanHelper.class, AOPHelper.class, IoCHelper.class, ControllerHelper.class};
 
         for (Class<?> cls : classes) {
             LOGGER.debug("load class [{}]", cls.getName());
